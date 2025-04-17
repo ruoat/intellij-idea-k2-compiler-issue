@@ -3,7 +3,10 @@ This example shows problems with `IntelliJ IDEA 2025.1 (Ultimate Edition)` Kotli
 This compiles and runs normally with `./gradlew run` but IDEA shows errors in the editor
 in file `uses-test-fixture-in-main/src/main/kotlin/com/example/Main.kt`.
 
-![k2-issue](k2-issue.png)
+![k2-on](k2-issue.png)
+
+When K2 mode is off, everything works as expected.
+![k2-off](k2-mode-off-works.png)
 
 Note that we are using testFixtures in the main classpath of the `uses-test-fixture-in-main`. There
 are cases where such is needed. For example, in testdata service, which is deployed in development environments.

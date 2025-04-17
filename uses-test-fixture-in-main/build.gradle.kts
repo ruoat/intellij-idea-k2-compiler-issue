@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation(testFixtures(project(":has-test-fixture")))
+    implementation(testFixtures(project(":has-test-fixture"))) // We are using testFixtures in the main classpath
     testImplementation(kotlin("test"))
 }
 
