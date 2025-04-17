@@ -4,3 +4,6 @@ The compiles and runs normally with `./gradlew run` but IDEA shows errors in the
 with file `uses-test-fixture-in-main/src/main/kotlin/com/example/Main.kt`.
 
 ![k2-issue](k2-issue.png)
+
+Note that we are using testFixtures in the main classpath of the `uses-test-fixture-in-main`. There
+are cases where such is needed. For example in testdata service, which is deployed in development environments.
